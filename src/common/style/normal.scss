@@ -1,0 +1,356 @@
+@import 'materials.scss';
+
+.blue_fill_btn,.orange_fill_btn,.blue_text_btn,.orange_text_btn{
+    font-size: 16px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.blue_fill_btn {
+    background: $color-blue;
+    color: $color-text;
+    &:hover {
+        background: $color-deep-blue;
+        color: $color-text-hover;
+    }
+    &:active {
+        background: $color-deep-blue;
+        color: $color-text;
+    }
+}
+
+.orange_fill_btn {
+    background: $color-orange;
+    color: $color-text;
+    &:hover {
+        background: $color-deep-orange;
+        color: $color-text-hover;
+    }
+    &:active {
+        background: $color-deep-orange;
+        color: $color-text;
+    }
+}
+
+.blue_text_btn {
+    background: $color-white;
+    border: 1px solid $color-blue;
+    box-sizing: border-box;
+    color: $color-blue;
+    &:hover {
+        background: $color-deep-blue;
+        color: $color-text-hover;
+    }
+    &:active {
+        background: $color-deep-blue;
+        color: $color-text;
+    }
+}
+
+.orange_text_btn {
+    background: $color-white;
+    border: 1px solid $color-orange;
+    box-sizing: border-box;
+    color: $color-orange;
+    &:hover {
+        background: $color-deep-orange;
+        color: $color-text-hover;
+    }
+    &:active {
+        background: $color-deep-orange;
+        color: $color-text;
+    }
+}
+
+.with_btn_inp{
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    width: 500px;
+    overflow: hidden;
+    border: 1px solid $color-blue;
+    input[type=text]{
+        height: 40px;
+        width: 400px;
+        box-sizing: border-box;
+        padding: 0 20px;
+        vertical-align: middle;
+    }
+    input[type=file]{
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        opacity: 0;
+    }
+    .blue_text_btn{
+        position: absolute;
+        right: -1px;
+        top: 50%;
+        font-size: 18px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        width: 100px;
+        border-radius: 20px;
+        margin: -20px 0 0;
+    }
+}
+
+.add_img_btn{
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../../assets/36-add-1.png) no-repeat center center/100% auto;
+    width: 36px;
+    height: 36px;
+    &:hover{
+        background-image: url(../../assets/36-add-1-hot.png);
+    }
+}
+.del_img_btn{
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../../assets/36-minus-1.png) no-repeat center center/100% auto;
+    width: 36px;
+    height: 36px;
+    &:hover{
+        background-image: url(../../assets/36-minus-1-hot.png);
+    }
+}
+
+
+.step_item {
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .title{
+        font-size: 0;
+        line-height: 50px;
+        position: relative;
+        border-bottom: 1px solid #aaa;
+        i{
+            display: inline-block;
+            width: 10px;
+            height: 22px;
+            background: #666;
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+        span{
+            color: #666;
+            font-size: 20px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .orange_text_btn{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 20px;
+            margin: -20px 0 0;
+        }
+    }
+    .content{
+        padding: 20px 0;
+        li{
+            line-height: 50px;
+            font-size: 0;
+            strong{
+                width: 35%;
+                display: inline-block;
+                text-align: right;
+                vertical-align: middle;
+                font-size: 14px;
+                i{
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 2px;
+                    border: 1px solid #aaa;
+                    margin-right: 10px;
+                    position: relative;
+                    cursor: pointer;
+                }
+            }
+            .inp,textarea,p{
+                width: 60%;
+                line-height: 24px;
+                font-size: 14px;
+                box-sizing: border-box;
+                padding: 0 10px;
+                display: inline-block;
+                vertical-align: middle;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+            p{
+                border: none;
+                position: relative;
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 20%;
+                    text-align: center;
+                    height: 100%;
+                    font-size: 14px;
+                    border: 1px solid #ccc;
+                    box-sizing: border-box;
+                    color: #aaa;
+                    border-radius: 4px;
+                    position: absolute;
+                    right: 0;
+                }
+                label,button{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 20%;
+                    text-align: center;
+                    height: 100%;
+                    font-size: 14px;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    position: absolute;
+                    right: 0;
+                }
+            }
+            .check_box{
+                display: inline-block;
+                width: 65%;
+                line-height: 24px;
+                vertical-align: middle;
+                font-size: 14px;
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    min-width: 100px;
+                    i{
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 2px;
+                        border: 1px solid #aaa;
+                        margin-right: 10px;
+                        position: relative;
+                    }
+                }
+                em{
+                    color: #f00;
+                    font-size: 14px;
+                }
+            }
+            .checked{
+                i{
+                    background: $color-blue;
+                    &:before{
+                        content: '';
+                        transform-origin: 50% 100%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: 2px;
+                        height: 5px;
+                        background: #fff;
+                        margin: -2px 0 0 -1px;
+                        transform: rotate(-50deg);
+                    }
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        transform-origin: 50% 100%;
+                        top: 50%;
+                        left: 50%;
+                        width: 2px;
+                        height: 6px;
+                        margin: -4px 0 0 -1px;
+                        transform: rotate(40deg);
+                        background: #fff;
+                    }
+                }
+            }
+            textarea{
+                height: 48px;
+                overflow: auto;
+            }
+            .inp{
+                line-height: 30px;
+                height: 32px;
+                font-size: 0;
+                padding: 0;
+                position: relative;
+                input[type=text]{
+                    line-height: 24px;
+                    padding: 0 10px;
+                    box-sizing: border-box;
+                    width: 80%;
+                    vertical-align: middle;
+                    font-size: 14px;
+                }
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 20%;
+                    text-align: center;
+                    height: 100%;
+                    font-size: 14px;
+                    border-left: 1px solid #ccc;
+                    box-sizing: border-box;
+                    color: #aaa;
+                    border-radius: 4px;
+                    position: absolute;
+                    right: 0;
+                }
+                input[type=file]{
+                    width: 0;
+                    height: 0;
+                    opacity: 0;
+                    vertical-align: middle;
+                }
+                label,button{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 20%;
+                    text-align: center;
+                    height: 100%;
+                    font-size: 14px;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    position: absolute;
+                    right: 0;
+                }
+            }
+            img{
+                width: 300px;
+                height: 250px;
+            }
+        }
+    }
+    .warming{
+        color: #f00;
+        font-size: 14px;
+    }
+    .btn_list{
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        font-size: 0;
+        button{
+            width: 200px;
+            vertical-align: middle;
+            line-height: 36px;
+            font-size: 14px;
+            border-radius: 18px;
+            &:first-child{
+                margin-right: 50px;
+            }
+        }
+    }
+}
